@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'rustic_roadway_-_personal_uRg';
+    src: url('../public/fonts/rusticroadway-webfont.woff2') format('woff2'),
+         url('../public/fonts/rusticroadway-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../public/fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../public/fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   box-sizing: border-box;
+   text-align: center;
+   background-color: rgb(239, 239, 247);
+   font-size: 1em;
+}
+
+#title {
+    margin: 30px 20px;
+    color: darkblue;
+    font-family: 'rustic_roadway_-_personal_uRg', sans-serif;
+    font-size: 3em;
+
+}
+
+#content {
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+/* Main */
+#mainBox {
+    display: flex; 
+    justify-content: space-around;
+    gap: 50px;
+    
+}
+
+#gifBox {
+    width : 450px;
+    height: 500px;
+    background: url("../public/coat.gif");
+}
+
+#textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#mainPageText {
+    font-family: 'ralewaymedium', sans-serif;
+    margin-bottom: 30px;
+    color: darkblue;
+    font-size: 26px;
+}
+
+#location {
+    width: 100%;
+    font-size: 24px;
+    background-color: aliceblue;
+    color: darkblue;
+    padding: 5px 5px;
+}
+
+#location::placeholder {
+    color:rgb(82, 82, 235);
+}
+
+#getForecastBtn {
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+}
+
+.btnStyle {
+    border-radius: 8px;
+    background-color: darkblue;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px 0 10px;
+    border: darkblue;
+}

@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../public/fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../public/fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#fBox {
+    font-family: 'ralewaymedium';
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr;
+    gap: 50px;
+}
+
+#menuBox {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+}
+
+#celsius,
+#farenheit {
+    background-color: darkgreen;
+    border: darkgreen;
+    padding: 10px 15px 10px;
+}
+
+#currentDay {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    box-shadow: 0 0 15px rgba(0,0,0,0.75);
+}
+
+#todayIcon {
+    width: 250px;
+}
+
+#todayDate {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#todayConditions {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#todayMax,
+#todayMin {
+    font-size: 20px;
+    padding: 20px;
+}
+
+#place {
+    font-size: 30px;
+    letter-spacing: 1.8px;
+    word-spacing: 7px;
+    margin-bottom: 60px;
+}
+
+span {
+    font-size: 18px;
+    padding: 5px;    
+}
+
+#otherDays {
+    display: grid;
+    grid-template-columns: repeat(2, min(300px, 100%));
+    grid-template-rows: repeat(2, min(300px, 100%));   
+}
+
+.otherIcon {
+    width: 120px;
+}
+
+.conditions {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
